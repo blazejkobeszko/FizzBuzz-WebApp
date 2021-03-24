@@ -1,0 +1,20 @@
+﻿@page
+@model FizzBuzz_WebApp.Pages.OstatnioSzukaneModel
+@{
+    ViewData["Title"] = "Ostatnio szukane ";
+}
+<h1>@ViewData["Title"]</h1>
+<p></p>
+@if (Model.Info_sesji != null)
+{
+    <p>
+        Liczba którą wpisał użytkownik: @Model.Info_sesji.Liczba
+    </p>
+    <p>
+        Otrzymany wynik: @Model.Info_sesji.Wynik
+    </p>
+    <p>
+        Data: @Model.Info_sesji.Data
+    </p>
+
+}

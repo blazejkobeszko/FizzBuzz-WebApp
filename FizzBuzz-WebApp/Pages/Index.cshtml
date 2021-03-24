@@ -5,6 +5,17 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">PROGRAM FIZZBUZZ</h1><br />
+    <p>Podaj liczbę od 1 do 1000</p>
+    <form method="post">
+        <div class="form-row">
+            <div class="form-group col-md">
+                <label asp-for="FizzBuzz.Wynik"></label><br />
+                <input type="text" asp-for="FizzBuzz.Liczba" required/>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sprawdź</button>
+    </form>
+    <span asp-validation-for="FizzBuzz.Liczba" class="text-danger"></span>
+    <br /><h1> @ViewData["Message"] </h1>
 </div>
