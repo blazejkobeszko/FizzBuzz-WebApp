@@ -8,14 +8,15 @@ namespace FizzBuzz_WebApp.Models
 {
     public class Main
     {
-        [Display(Name = " ")]
+        public int Id { get; set; }
+        //[Display(Name = " ")]
         [Required(ErrorMessage = "Podaj liczbę z przedziału 1-1000.")]
         [Range(1, 1000)]
         public int Liczba { get; set; }
 
         public string Wynik { get; set; }
         
-        [DataType(DataType.Time)]
+       // [DataType(DataType.Time)]
         public DateTime Data
         {
             get; set;

@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 
 namespace FizzBuzz_WebApp.Pages
 {
-    public class OstatnioSzukaneModel : PageModel
+    public class ZapisaneWSesjiModel : PageModel
     {
         public Main Info_sesji { get; set; }
         public void OnGet()
